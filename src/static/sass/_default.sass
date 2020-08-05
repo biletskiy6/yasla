@@ -1,0 +1,31 @@
+@import "vars"
+@import "libs"
+@import "fonts"
+@import "smart-grid"
+@import "_mixins/mixins"
+
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+html
+	box-sizing: border-box
+	*, *:before, *:after
+		box-sizing: inherit
+
+body.home
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+
++reset()
